@@ -84,11 +84,29 @@ body.dark-theme {
 }
 
 
+/*========== colors change==========*/
+body.orange {
+    --hue-color: 340;
+}
+
+
+
 /*========== Button Dark/Light ==========*/
 .nav__btns {
     display: flex;
     align-items: center;
 
+}
+
+.change-color {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-color:hover {
+    color: var(--first-color);
 }
 
 .change-theme {
@@ -173,6 +191,12 @@ img {
     gap: 1.5rem;
 }
 
+.grid-color {
+    display: grid;
+    gap: 1rem;
+}
+
+
 .header {
     width: 100%;
     position: fixed;
@@ -231,6 +255,11 @@ img {
     gap: 2rem;
   }
   
+  .nav__color{
+    grid-template-columns: repeat(5, 1fr);
+    gap: .5rem;
+  }
+
   .nav__link{
     display: flex;
     flex-direction: column;
@@ -1063,9 +1092,6 @@ img {
   #yellowButton {
     background: #FFD10F;
   }
-
-
-
 /*========== SCROLL UP ==========*/
 .scrollup {
     position: fixed;
@@ -1123,6 +1149,11 @@ img {
     .nav__list {
         column-gap: 0;
     }
+    
+    .nav__color {
+        column-gap: 0;
+    }
+
     .home__content {
         grid-template-columns: .25fr 3fr;
     }
@@ -1249,6 +1280,12 @@ img {
         .nav__list {
             display: flex;
             column-gap: 2rem;
+        }
+
+        .nav__color {
+            display: flex;
+            column-gap: .5rem;
+            margin-left: 3rem;
         }
 
         .nav__menu {
@@ -1420,5 +1457,11 @@ img {
     }
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav__color {
+        display: flex;
+        column-gap: .5rem;
+        margin-left: 3rem;
     }
 }
