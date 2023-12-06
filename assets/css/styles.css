@@ -1038,6 +1038,34 @@ img {
     color: #FFF;
 }
 
+/*==================== color changer ====================*/
+
+#switcher li {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+  }
+
+  #orangeButton {
+    background: orange;
+  }
+  #blueButton {
+    background: #2962FF;
+  }
+  #greenButton {
+    background: hsl(130, 91%, 41%);
+  }
+
+  #pinkButton {
+    background: hsl(336, 100%, 50%);
+  }
+  
+  #yellowButton {
+    background: #FFD10F;
+  }
+
+
+
 /*========== SCROLL UP ==========*/
 .scrollup {
     position: fixed;
