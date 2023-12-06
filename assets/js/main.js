@@ -198,3 +198,34 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+/*==================== color changer ====================*/ 
+
+
+document.getElementById('orangeButton').onclick = switchOrange;
+document.getElementById('blueButton').onclick = switchBlue;
+document.getElementById('greenButton').onclick = switchGreen;
+document.getElementById('pinkButton').onclick = switchPink;
+document.getElementById('yellowButton').onclick = switchYellow;
+
+
+function switchOrange() {
+  document.documentElement.style.setProperty('--hue-color', 30);  
+}
+
+function switchBlue() {
+  document.documentElement.style.setProperty('--hue-color', 230);  
+}
+
+function switchGreen() {
+  document.documentElement.style.setProperty('--hue-color', 142);  
+}
+
+function switchPink() {
+  document.documentElement.style.setProperty('--hue-color', 340);  
+}
+
+function switchYellow() {
+  document.documentElement.style.setProperty('--hue-color', 55);  
+}
